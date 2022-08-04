@@ -1,0 +1,251 @@
+
+.footer {
+    max-height: 252px;
+    background: var(--background);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+@media screen and (max-width: 767px){
+    max-height: 100%;
+}
+}
+
+@media screen and (max-width: 767px){
+    .fist-footer-div,
+    .second-footer-div,
+    .footer-form,
+    .lists-f{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    display: inline-block;
+}
+
+.lists-d {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+        &__item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+        &__address {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: var(--accent-color2);
+        
+            transition: color var(--transform-1);
+        }
+
+        &__address:hover,
+        &__address:focus,
+        &__mail:hover,
+        &__mail:focus,
+        &__tel:hover,
+        &__tel:focus {
+            color: var(--accent-color1);
+        
+        }
+        
+        &__mail,
+        &__tel {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+        
+            transition: color var(--transform-1);
+        }
+}
+
+.white {
+    color: var(--accent-color2);
+}
+
+.address {
+    font-style: normal
+}
+
+
+// ПРИСОЕДИНЯЙТЕСЬ
+// .join {
+//     tab-size: 4;
+//     line-height: 1.15;
+//     margin-left: 70px;
+//     padding-top: 15px;
+// }
+
+
+.second-footer-div {
+    margin-left: 70px;
+    margin-right: 93px;
+
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--accent-color2);
+        margin-bottom: 20px;
+    }
+}
+
+.end {
+    // display: flex; 1200
+    
+}
+
+
+// Блок "Підпишись"
+.footer-form {
+    display: flex;
+    margin-right: 0;
+
+        &__fild {
+            // display: flex; 1200
+            margin-bottom: 0px;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--accent-color2);
+            margin-bottom: 20px;
+    
+        }
+    
+        &__subscribe {
+            width: 358px;
+            height: 50px;
+            background-color: var(--background);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            margin-right: 12px;
+            padding-right: 5px;
+            padding-left: 16px;
+            color: var(--accent-color2);
+            transition: border var(--transform-1);
+        
+            margin-bottom: 20px;
+        }
+
+    
+        &__subscribe:focus {
+            transition: border var(--transform-1);
+        }
+    
+        &__subscribe::placeholder {
+            width: 47px;
+            height: 20px;
+    
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            align-items: center;
+    
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.lists-f {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__list {
+        transition: color var(--transform-1);
+    }
+
+    &__list:hover {
+        fill: var(--blue-background);
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+
+        transition: background-color var(--transform-1);
+    }
+
+    &__instagram-white,
+    &__twitter-white,
+    &__facebook-white,
+    &__linkedin-white {
+        fill: var(--accent-color2);
+    }
+
+    &__list:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link:hover {
+        background-color: var(--blue-background);
+
+    }
+
+    &__link:focus {
+        background-color: var(--blue-background);
+    }
+}
+
+
+
+
+
+// Кнопка "Підпишись"
+.footer-form__button {
+    position: relative;
+
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    padding: 10px 62px 10px 29px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.footer-form__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: var(--background-color);
+}

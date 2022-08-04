@@ -1,0 +1,87 @@
+/* Опис переваг */
+.description {
+    padding-top: 94px;
+    align-items: center;
+    // display: flex; 1200
+
+// @media screen and (max-width: 767px) {
+    
+//     }
+}
+
+
+
+.lists-a {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    // display: flex; 1200
+
+    &__plate::before,
+    &__clock::before,
+    &__diagram::before,
+    &__astronaut::before {
+        content: '';
+        display: block;
+        height: 120px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--other-background-color);
+    }
+
+    &__plate::before {
+        background-image: url(../images/hw/original.svg/plate1.svg);
+    }
+
+    &__clock::before {
+        background-image: url(../images/hw/original.svg/clock2.svg);
+    }
+
+    &__diagram::before {
+        background-image: url(../images/hw/original.svg/diagram3.svg);
+    }
+
+    &__astronaut::before {
+        background-image: url(../images/hw/original.svg/astronaut4.svg);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+        margin-bottom: 10px;
+        margin-top: 30px;
+        width: 270px;
+        text-align: center;
+
+@media screen and (max-width: 767px) {
+        width: 100%;
+        }
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 270px;
+
+@media screen and (max-width: 767px) {
+        width: 100%;
+        }
+        
+    }
+}
+
+

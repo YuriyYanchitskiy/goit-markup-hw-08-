@@ -1,0 +1,94 @@
+/* //////////////////////Клієнти//////////////////////////// */
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+    
+        &__group1,
+        &__group2,
+        &__group3,
+        &__group4,
+        &__group5,
+        &__group6 {
+            width: 170px;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 0;
+            fill: var(--color-icon);
+    
+            transition: fill var(--transform-1);
+        }
+    
+        &__group1:hover .svg-group1,
+        &__group2:hover .svg-group2,
+        &__group3:hover .svg-group3,
+        &__group4:hover .svg-group4,
+        &__group5:hover .svg-group5,
+        &__group6:hover .svg-group6,
+        &__group1:focus .svg-group1,
+        &__group2:focus .svg-group2,
+        &__group3:focus .svg-group3,
+        &__group4:focus .svg-group4,
+        &__group5:focus .svg-group5,
+        &__group6:focus .svg-group6 {
+            fill: var(--blue-background);
+        }
+    
+    
+        &__group1:hover,
+        &__group2:hover,
+        &__group3:hover,
+        &__group4:hover,
+        &__group5:hover,
+        &__group6:hover,
+        &__group1:focus,
+        &__group2:focus,
+        &__group3:focus,
+        &__group4:focus,
+        &__group5:focus,
+        &__group6:focus {
+            border: 1px solid var(--blue-background);
+    
+        }
+}
+
+// 
+.lists-e {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+}
+
+.customers__item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin: 15px;
+        }
+    }
+}
